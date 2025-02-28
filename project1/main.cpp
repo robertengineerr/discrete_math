@@ -31,7 +31,8 @@ std::vector<int> multiply(std::vector<int> n, int x) {
 }
 
 std::vector<int> fact_no_zeros(int n) {
-    std::vector<int> r = {1};
+    std::vector<int> r;
+    r.push_back(1);
     for (int i=2; i<=n; i++) {
         int x=i;
         while (x%10==0) x/=10; //keep dividing by ten when divisible
